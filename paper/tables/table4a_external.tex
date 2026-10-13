@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\small
+\caption{External validation on 97 scans of the four known classes (11,903 scans overlapping with the training data were removed before evaluation).}
+\label{tab:external}
+\begin{tabular}{lcccccc}
+\toprule
+Model & External accuracy (\%) & Internal (\%) & Change (pp) & External macro-F1 & ECE & AUROC (error det.) \\
+\midrule
+CNN + softmax (baseline) & 58.76 [50.52, 69.07] & 93.69 & -34.93 & 0.5209 & 0.3824 & 0.473 \\
+\bottomrule
+\end{tabular}
+\end{table}

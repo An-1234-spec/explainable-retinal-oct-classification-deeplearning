@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Detecting 12,000 scans of diseases outside the label set against 97 known-class scans from the same external dataset. 0.5 = chance.}
+\label{tab:unseen}
+\begin{tabular}{lcccc}
+\toprule
+Model & AUROC: own score & AUROC: 1 - max prob. & AUROC: entropy & FPR at 95\% TPR (own score) \\
+\midrule
+CNN + softmax (baseline) & 0.314 & 0.314 & 0.316 & 0.959 \\
+\bottomrule
+\end{tabular}
+\end{table}

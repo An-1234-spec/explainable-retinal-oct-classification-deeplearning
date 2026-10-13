@@ -1,0 +1,21 @@
+| Setting | Value |
+|---|---|
+| Backbone | ConvNeXt-Tiny, ImageNet-pretrained |
+| Input size | 224 x 224 |
+| Optimiser | AdamW |
+| Learning rate (backbone / head) | 0.0001 / 0.0005 |
+| Weight decay | 0.05 |
+| Schedule | 1 warm-up epoch(s), cosine decay |
+| Epochs x samples per epoch | 15 x 30000 |
+| Batch size | 32 |
+| Sampling | balanced |
+| Weight averaging (EMA) | True (decay 0.999) |
+| Label smoothing | 0.0 |
+| Gradient clipping | 1.0 |
+| Evidential loss KL weight / anneal epochs | 0.1 / 10 |
+| Transformer (multi-scale variants) | 2 layers, 4 heads, width 256 |
+| Normalisation | imagenet |
+| Augmentation (train) | crop_scale=[0.75, 1.0], crop_ratio=[0.9, 1.1], flip_p=0.5, rotate_deg=10, rotate_p=0.5, brightness=0.2, contrast=0.2, blur_p=0.2, erase_p=0.25 |
+| Stored image size / resize | 256 px / squash |
+| Mixed precision | yes (float16 autocast) |
+| Model selection | best validation macro-F1; test set scored once |

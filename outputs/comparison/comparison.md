@@ -1,0 +1,3 @@
+| Variant | Seeds | Acc (%) | Macro-F1 | ECE | AUROC (err) | Acc@90% cov (%) | Acc@80% cov (%) | Errors | Acc 95% CI (%) | F1 95% CI | Params (M) | Train (min) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| CNN + softmax (baseline) | 42 | 93.69 | 0.9207 | 0.0511 | 0.831 | 96.98 | 97.88 | 488.0 | [93.17, 94.19] | [0.9140, 0.9273] | 27.8 | 76 |
